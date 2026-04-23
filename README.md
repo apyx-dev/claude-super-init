@@ -50,7 +50,7 @@ That's it. One command. Everything configured. Agents generated. Tools installed
 # manually write CLAUDE.md...
 # manually figure out your stack...
 
-⏱️ 30-60 min setup per project
+⏱️ 45-60 min setup per project
 🪫 generic agents, not project-aware
 📦 no token optimization
 ```
@@ -62,7 +62,7 @@ That's it. One command. Everything configured. Agents generated. Tools installed
 ```
 /super-init
 
-⏱️  ~2 min
+⏱️  ~5 min
 🔋 agents know YOUR stack, YOUR code
 📦 up to 49x token savings (graph)
 📦 up to 75% fewer output tokens (caveman)
@@ -77,15 +77,30 @@ That's it. One command. Everything configured. Agents generated. Tools installed
 
 ## 🚀 Install
 
+**Option 1 — One-liner (shell):**
+
 ```bash
 claude plugin install super-init@claude-super-init
 ```
 
-Or via marketplace:
+**Option 2 — Inside Claude Code:**
+
+```
+/plugin marketplace add apyx-dev/claude-super-init
+/plugin install super-init@claude-super-init
+```
+
+**Option 3 — Via marketplace (shell):**
 
 ```bash
 claude marketplace add github:apyx-dev/claude-super-init
 claude plugin install super-init
+```
+
+Then run:
+
+```
+/super-init
 ```
 
 ---
@@ -122,6 +137,7 @@ Your project gets a **team** — not generic templates, but agents built from yo
 | 🟡 `devops.md` | Docker / Terraform / K8s / CI | Infrastructure & deployment | Sonnet |
 | 🔵 `ai.md` | ANY AI/ML framework | LLM integrations, pipelines | Sonnet |
 | 🟤 `data.md` | dbt / Airflow / SQL-heavy | ETL, data warehousing | Sonnet |
+| ⚪ `{name}.md` | Service doesn't fit standard roles | Custom agent from universal template | Sonnet |
 
 ### What makes these agents different?
 
@@ -177,6 +193,7 @@ Super Init recognizes **30+ languages**, **25+ frameworks**, and a wide range of
 
 <details>
 <summary><b>Full detection matrix</b> (click to expand)</summary>
+
 
 **Languages:** TypeScript, JavaScript, Python, Go, Rust, Java, Kotlin, Swift, Ruby, PHP, C#, Dart, Vue, Svelte
 
