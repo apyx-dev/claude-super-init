@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-super-init",
+  "description": "One-command project initialization: code graph, caveman mode, and auto-generated agents tailored to your stack.",
+  "owner": {
+    "name": "Ilya A.",
+    "url": "https://github.com/apyx-dev"
+  },
+  "plugins": [
+    {
+      "name": "super-init",
+      "description": "Analyze project structure, install code-review-graph + caveman, generate .claude/agents/ based on detected tech stack.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
