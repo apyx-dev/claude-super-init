@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "keywords": ["productivity", "initialization", "agents", "code-graph", "automation"],
+  "commands": "./commands/",
   "skills": "./skills/",
   "interface": {
     "displayName": "Super Init",
