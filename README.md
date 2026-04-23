@@ -29,7 +29,7 @@ You open a new project with Claude Code. You want multi-agent workflows. Now you
 ## The Fix
 
 ```
-/super-init
+/super-init:init
 ```
 
 That's it. One command. Everything configured. Agents generated. Tools installed. Done.
@@ -60,7 +60,7 @@ That's it. One command. Everything configured. Agents generated. Tools installed
 
 ### ✅ With Super Init
 ```
-/super-init
+/super-init:init
 
 ⏱️  ~5 min
 🔋 agents know YOUR stack, YOUR code
@@ -100,7 +100,7 @@ claude plugin install super-init
 Then run:
 
 ```
-/super-init
+/super-init:init
 ```
 
 ---
@@ -172,18 +172,18 @@ Full control over what runs:
 
 | Command | What Runs |
 |---------|-----------|
-| `/super-init` | Everything |
-| `/super-init --no-graph` | Skip code-review-graph |
-| `/super-init --no-caveman` | Skip caveman plugin |
-| `/super-init --no-agents` | Skip agent generation |
-| `/super-init --no-mcp` | Skip MCP server configuration |
-| `/super-init --agents-only` | Only analyze + generate agents |
-| `/super-init --graph-only` | Only install code-review-graph |
-| `/super-init --caveman-only` | Only install caveman |
-| `/super-init --mcp-only` | Only configure MCP servers |
-| `/super-init --rebuild` | Overwrite existing agents + rebuild graph |
+| `/super-init:init` | Everything |
+| `/super-init:init --no-graph` | Skip code-review-graph |
+| `/super-init:init --no-caveman` | Skip caveman plugin |
+| `/super-init:init --no-agents` | Skip agent generation |
+| `/super-init:init --no-mcp` | Skip MCP server configuration |
+| `/super-init:init --agents-only` | Only analyze + generate agents |
+| `/super-init:init --graph-only` | Only install code-review-graph |
+| `/super-init:init --caveman-only` | Only install caveman |
+| `/super-init:init --mcp-only` | Only configure MCP servers |
+| `/super-init:init --rebuild` | Overwrite existing agents + rebuild graph |
 
-Combine freely: `/super-init --no-graph --no-caveman` runs agents only.
+Combine freely: `/super-init:init --no-graph --no-caveman` runs agents only.
 
 ---
 
